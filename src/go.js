@@ -5,10 +5,10 @@ const app = express()
 
 const router = express.Router()
 
-router.get("/", (req, res) => {
+router.get("/go", (req, res) => {
     return res.send("hello world")
 })
 
-app.use("/.netlify/functions/go", router)
+app.use("/go", router)
 
 module.exports.handler = serverless(app)
