@@ -11,7 +11,7 @@ router.get("/:id/:subid", (req, res) => {
   redirectToProvider(id, subid, res)
 });
 
-app.use(`/go`, router);
+app.use(`/.netlify/functions/go`, router);
 
 function redirectToProvider(id, subid, res) {
   switch (id) {
