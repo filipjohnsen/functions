@@ -5,7 +5,7 @@ const app = express()
 
 const router = express.Router()
 
-router.get("/go/:id/:subid", (req, res) => {
+router.get("/", (req, res) => {
     console.log(req.params.id, req.params.subid)
     return res.send("hello world")
 })
