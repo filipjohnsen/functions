@@ -9,6 +9,6 @@ router.get("/", (req, res) => {
     return res.send("hello world")
 })
 
-app.use("/.netflify/functions/go", router)
+app.use("/.netlify/functions/go", router)
 
 module.exports.handler = serverless(app)
