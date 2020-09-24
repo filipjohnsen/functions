@@ -1,2 +1,2 @@
-/redirect/node_modules
-/redirect/package-lock.json
+node_modules
+functions

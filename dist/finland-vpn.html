@@ -1,0 +1,251 @@
+<?php
+$subid = "finlandbb";
+setcookie("subid", $subid, 0, "/", ".paras7vpn.fi", true, true);
+?>
+
+<!doctype html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117328835-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117328835-1', {
+            'anonymize_ip': true
+        });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Paras7VPN</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png" sizes="16x16">
+
+    <script src="https://kit.fontawesome.com/100f05b54f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-lightblue">
+    <div onclick="hideRankingDisclaimer()" id="ranking-disclaimer-overlay" class="disclaimer-overlay">
+    <div class="disclaimer">
+        <h3 class="bold">Mitä korostamme arvioinnissamme:</h3>
+        <menu>
+            <li class="bulletmark">Hinta</li>
+            <li class="bulletmark">Nopeus ja laatu</li>
+            <li class="bulletmark">Käyttäjäkokemus</li>
+            <li class="bulletmark">Edustettujen maiden ja servereiden määrä</li>
+            <li class="bulletmark">Onko rahat takaisin takuuta, jos asiakas ei ole tyytyväinen</li>
+            <li class="bulletmark">Asiakaspalvelu ja aukioloajat</li>
+        </menu>
+        <p>Tämä verkkosivusto saa maksuja linkityksestä VPN-palveluntarjoajiin. Siksi sivusto on ilmainen käyttäjille.</p>
+    </div>
+</div>
+<div onclick="hideAddDisclaimer()" id="add-disclaimer-overlay" class="disclaimer-overlay">
+    <div class="disclaimer">
+        <h3 class="bold">Mainostus:</h3>
+        <p>Että tämä sivusto voisi olla ilmainen käyttää, me saamme maksuja linkittämisestä eri palveluntarjoajiin.</p>
+        <p>Meillä ei ole mahdollisuutta kattaa kaikkia VPN-palveluntarjoajia. Toivottavasti nautit tästä sivustosta ja jaat sen kavereiden ja perheen kanssa, jotka ovat kiinnostuneita VPN-palveluista.</p>
+    </div>
+</div>
+<header>
+    <nav>
+        <div class="logo-container">
+            <a href="./"><img alt="logo" class="logo" src="assets/img/logo.png"><span class="logo-text"><span>Paras7</span><span>VPN</span></span></a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="meist_">MEISTÄ</a>
+            <a href="contact.php">OTA YHTEYTTÄ</a>
+            <a href="tietosuojak_yt_nt_">TIETOSUOJAKÄYTÄNTÖ</a>
+        </div>
+        <div id="burger-menu">&#9776;</div>
+    </nav>
+</header>
+    <div class="container-fluid">
+        <div class="wide-container">
+            <div class="row" style="padding: 0;">
+                <div class="col-lg-7 col-sm-12">
+                    <h1 class="main-title">Parasta VPN-palvelua Suomessa</h1>
+                    <menu>
+                        <li class="checkmark bold">Turvallinen, salattu ja yksityinen verkon selaaminen</li>
+                        <li class="checkmark bold sm-none">Rajaton pääsy verkkosivuille ja sovelluksiin</li>
+                        <li class="checkmark bold">Ilmaiset koeajat & tyytyväisyystakuu</li>
+                        <li class="checkmark bold">Todella nopeat nopeudet, täydellisiä HD-suoratoistoon</li>
+                        <div class="col-12 lg-none" style="padding: 0">
+                            <div class="info-container">
+                                <sub onclick="showAddDisclaimer()" class="info">Lue lisää luokitussysteemistä</sub>
+                            </div>
+                        </div>
+                    </menu>
+                    <div class="sm-none operative-system">
+                        <menu>
+                            <li style="margin-right: 10px;">Saatavilla:</li>
+                            <li><img alt="windows" src="assets/img/windows.svg"></li>
+                            <li><img alt="apple" src="assets/img/apple.svg"></li>
+                            <li><img alt="android" src="assets/img/001-android-logo.svg"></li>
+                            <li><img alt="linux" src="assets/img/linux.svg"></li>
+                        </menu>
+                    </div>
+                </div>
+                <div class="col-lg-5 sm-none relative">
+                    <img style="z-index:1;" class="full-img bottom right" alt="" src="assets/img/finland.png">
+                </div>
+            </div>
+        </div>
+        <div class="bg-lightblue">
+            <?php
+            include "includes/ranking.php";
+            rankingTable($subid);
+            ?>
+            <article class="row">
+                <div class="col-12">
+                    <h2 class="bold">Mikä on VPN?</h2>
+                    <div class="col-lg-6 sm-none pull-right">
+                        <img class="full-img" alt="ExpressVPN" src="assets/img/expressvpn.png">
+                        <p class="quote">ExpressVPN</p>
+                    </div>
+                    <p>VPN luo turvallisen, salatun ”tunnelin” internetiin tietokoneesi, älypuhelimesi tai tablettisi ja
+                        haluamasi verkkosivun tai sovelluksen välillä.</p>
+                    <p>Tämä on mahdollista, koska yhteys kulkee toisen maan VPN-palvelimen kautta. Tämä takia näyttää
+                        siltä, että olet ”paikallinen” vierailija.</p>
+                    <div class="col-12 lg-none">
+                        <img class="full-img" alt="ExpressVPN" src="assets/img/expressvpn.png">
+                        <p class="quote">ExpressVPN</p>
+                    </div>
+                    <p>Kun IP-osoitteesi korvataan VPN-palvelimella, olet anonyymi.</p>
+                    <p>Sinun on vain asennettava VPN-sovellus laitteellesi. Parhaat VPN-ohjelmat toimivat tietokoneissa,
+                        älypuhelimissa, tableteilla yms.</p>
+                    <p>Kun haluat piilottaa oikean sijaintisi, voit avata VPN-ohjelman ja yhdistää maahan, jonka
+                        vierailija haluat olla. Tämän jälkeen voit käyttää selaintasi ja muita ohjelmia tavalliseen
+                        tapaan..</p>
+                </div>
+                <div class="col-12">
+                    <h2 class="bold">Miten yhdistän VPN-palvelimeen?</h2>
+                    <p>Yleisin tapa on käyttää VPN-sovellusta, jonka asentaa haluamaansa laitteeseen. VPN-ohjelma antaa
+                        mahdollisuuden yhdistää moneen eri palvelimeen ympäri maailman.</p>
+                    <p>Saatavilla olevien sijaintien määrä riippuu käytetystä VPN-tarjoajasta. Käyttämällä VPN-ohjelmaa,
+                        luot turvallisen yhteyden laitteesi ja palvelimen, tietoverkon tai muun digitaalisen laitteen
+                        välillä.</p>
+                    <p>Käyttämäsi VPN-tyyppi riippuu siitä, miten haluat luoda yhteyden internetiin ja miten turvallisen
+                        yhteyden haluat.</p>
+                    <p>Useimmissa tapauksissa tarvitsee vain rekisteröityä VPN-palveluun ja asentaa sovellus laitteelle
+                        ennen kuin voi yhdistää VPN:ään. Useimmat VPN-palvelut tarjoavat ohjelmistoja kaikille suurille
+                        käyttöjärjestelmille.</p>
+                </div>
+            </article>
+            <article class="row">
+                <div class="col-12">
+                    <h2 class="bold">Mitkä ovat VPN-ohjelman edut?</h2>
+                    <p>VPN-ohjelman käyttöön liittyy monia etuja. Jos tarvitset täyttä yksityisyyttä, VPN on paras
+                        vaihtoehto. Toisin kuin proxy-palvelut tai muut IP-osoitteen piilottavat sovellukset, VPN
+                        tarjoaa paremman yksityisyyden luomalla turvallisen yhteyden laitteen ja palvelimen tai
+                        yhdistetyn verkon välillä.</p>
+                    <p>VPN antaa myös ylimääräistä turvaa. Jos sinun on lähetettävä tai vastaanotettava arkaluonteisia
+                        tietoja internetin kautta, VPN-ohjelma tekee tästä turvallisempaa.</p>
+                    <p>Toinen VPN-ohjelman etu on rajoittamaton pääsy verkkosivuille ja ohjelmiin, jotka ovat muuten
+                        estetty. Pystyt esimerkiksi katsomaan</p>
+                    <p>Yhdysvaltojen Netflix-elokuvia Suomessa. Missä ikinä oletkin, VPN antaa sinulle mahdollisuuden
+                        käyttää monia eri palvelimia ympäri maailman.</p>
+                </div>
+            </article>
+            <article class="row">
+                <div class="col-12">
+                    <h2 class="bold">Voinko käyttää VPN:ää kaikilla laitteilla?</h2>
+                    <div class="col-lg-6 sm-none pull-left">
+                        <img class="full-img" alt="ExpressVPN" src="assets/img/nordvpn.png">
+                        <p class="quote">NordVPN</p>
+                    </div>
+                    <p>Useimmiten VPN-ohjelmat ovat saatavilla kaikilla käyttämilläsi laitteilla. Sinun tulisi kuitenkin
+                        varmistaa, että ohjelma, jota aiot käyttää, kattaa kaikki käyttämäsi käyttöjärjestelmät.
+                        Esimerkiksi, ExpressVPN ja CyberGhost tukevat kaikkia johtavia käyttöjärjestelmiä.</p>
+                    <div class="col-12 lg-none">
+                        <img class="full-img" alt="ExpressVPN" src="assets/img/nordvpn.png">
+                        <p class="quote">NordVPN</p>
+                    </div>
+                    <p>Jos paras mahdollinen turvallisuus on tärkeää, on valittava oikeanlainen VPN-protokolla.
+                        VPN-palvelut tarjoavat erilaisia protokollia tietyille käyttöjärjestelmille. Sinun tulisi
+                        miettiä, mitä VPN-protokollaa haluat käyttää ja sitten tarkistaa, mitkä VPN-palvelut tarjoavat
+                        sitä käyttämällesi käyttöjärjestelmälle.</p>
+                </div>
+            </article>
+            <article class="row">
+                <div class="col-12">
+                    <h2 class="bold">Maksullinen vai ilmainen VPN-ohjelma?</h2>
+                    <p>VPN-tarjoajia on monia ja monet niistä tarjoavat ilmaispalveluja. Näiden ilmaisohjelmien ongelma
+                        on usein hitaampi yhteys, huonompi toimintavarmuus, turvallisuus ja tuki. Jos haluat käyttää
+                        VPN:ää sisällön lataamiseen, nopeus ja toimintavarmuus ovat tärkeitä.</p>
+                    <p>Turvallisuus on myös hyvin tärkeä asia VPN-tarjoajan valinnassa. Useimmiten ilmaispalvelut
+                        tarjoavat Point-to-Point Tunneling Protokollaa (PPTP), joka on helpoin asentaa. PPTP:n kohdalla
+                        on huomioitu heikkouksia, jotka tekevät näistä VPN-yhteyksistä alttiita hyökkäyksille.
+                        Maksulliset palvelut tarjoavat monia erilaisia VPN-protokollia, kuten IPSec (Internet Protocol
+                        Security) ja L2TP (Layer 2 Tunneling Protocol)", jotka ovat PPTP:tä turvallisempia.</p>
+                    <p>Toinen tärkeä asia on VPN-palvelun tarjoama siirtonopeus. Ilmaispalveluilla ei yleensä ole
+                        resursseja sijoittaa tehokkaisiin internet-yhteyksiin, joka johtaa hitaampiin yhteyksiin.
+                        Maksulliset VPN-sovellukset tarjoavat turvallisempia ja nopeampia yhteyksiä.</p>
+                    <p>Turvallisuuden ja siirtonopeuden lisäksi tarjoajalla on oltava monia palvelimia. Maksullisilla
+                        VPN-palveluilla on usein monia palvelimia, joka tekee VPN-yhteydestä nopean sekä vahvan ja voit
+                        suoratoistaa sisältöä ilman puskurointiongelmia tai yhteyden katkeamista.</p>
+                    <p>Maksullisten palvelujen asiakaspalvelu on lähes aina parempi kuin ilmaisten. Ilmaispalvelut
+                        vaativat, että etsit VPN-vian ja korjaat sen itse, kun taas maksullisilla palveluilla on usein
+                        24/7 asiakaspalvelu. Maksulliset VPN:ät tarjoavat myös asiakaspalvelua puhelimitse, joka voi
+                        olla hyödyllistä heille, jotka eivät voi ratkaista ongelmaa verkossa.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+    </div>
+    <footer>
+    <div id="footer-container">
+        <div class="logo-container">
+            <img class="logo" src="assets/img/logo.png"><span class="logo-text"><span>Paras7</span><span>VPN</span></span>
+        </div>
+        <menu class="footer-menu">
+            <li><a href="tietosuojak_yt_nt_">Tietosuojakäytäntö</a></li>
+            <li><a href="cookies">Cookies</a></li>
+        </menu>
+        <h5>Paras7VPN on palvelu</h5>
+        <menu>
+            <li>LWM AS</li>
+            <li>Org.nr. 915040004</li>
+            <li>Bogstadveien 27b</li>
+            <li>0355 Oslo</li>
+            <li>Norja</li>
+            <li>contact@paras7vpn.fi</li>
+        </menu>
+        <p>Varoitus<br>
+            Paras7VPN ei ole VPN-palvelu eikä tue VPN:n laitonta käyttöä. Käyttäjien tulisi varmistaa, että he
+            seuraavat voimassa olevia lakeja käyttäessään VPN-ohjelmaa.
+            <br><br>
+            Emme voi hallita kolmannen osapuolen verkkosivuja ja kolmannen osapuolen sivun käyttö saattaa sisältää
+            käyttöehdot. Yritämme pitää verkkosivun tiedot päivitettyinä ja paikkansapitävinä mutta emme voi taata
+            tätä.
+        </p>
+        <p>Mainostajasisältö<br>
+            Paras7VPN rahoitetaan hyvitysten kautta, joita saamme ohjaamalla ihmisiä sivulta VPN-tarjoajille.
+            Arviojärjestelmämme perustuu mielipiteeseemme ja se voi muuttua. Arvioon vaikuttavat tekijät ovat
+            VPN-ohjelman ominaisuudet ja toiminnat, hinta ja muiden käyttäjien arviot.
+        </p>
+        <p>
+            Cookies<br>
+            Eväste on pieni tietotiedosto, jota säilytetään tietokoneesi kovalevyllä. Tiedosto auttaa analysoimaan
+            verkkoliikennettä ja kertoo sinulle, kun käyt tietyllä sivulla.
+            <br><br>
+            Käytämme evästeitä seurataksemme käytettyjä sivuja ja painettuja linkkejä. Tämä auttaa meitä
+            analysoimaan tietoliikennettä ja tekee verkkosivusta käyttäjäystävällisemmän. Käytämme tietoja vain
+            tilastollisiin analyyseihin.
+            <br><br>
+            Voit hyväksyä tai hylätä evästeiden käytön. Useimmat selaimet hyväksyvät evästeet automaattisesti mutta
+            voit asettaa selaimesi hylkäämään evästeet.
+        </p>
+    </div>
+</footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
