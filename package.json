@@ -7,6 +7,10 @@
     "start": "./node_modules/.bin/netlify-lambda serve src",
     "build": "./node_modules/.bin/netlify-lambda serve src"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipjohnsen/functions.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
