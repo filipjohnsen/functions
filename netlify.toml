@@ -1,8 +1,2 @@
 [build]
     functions = "functions"
-
-[[redirects]]
-  from = "/go/:id/:subid"
-  to = "/.netlify/functions/go"
-  status = 301
-  query = {id = ":path", subid = ":subid"}
