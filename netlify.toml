@@ -1,7 +1,2 @@
 [build]
     functions = "functions"
-
-[[redirects]]
-    from = “/go/:id/:subid”
-    to = ‘/.netlify/functions/go/:id/:subid’
-    status = 200
